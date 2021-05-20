@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="index.css">
+	<title>Portafolio Dinamico - Javith Tapia</title>
+</head>
+<body>
+	
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>Javith Tapia</h1>
+				<p id="text">Hola, soy Javith Tapia, un programador de 15 años y este es mi humilde portafolio, aquí puedes ver mis proyectos hechos con <a href="#" id="html">HTML5</a>, <a href="#" id="css">CSS</a> y <a href="#" id="javascript">JAVASCRIPT</a>.              
+					Si necesitas contactarme te dejaré mi Gmail para que puedas hablar conmigo.</p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">bitcoin</a>
+				<a href="#">calculadora</a>
+				<a href="#">cifrado de cesar</a>
+				<a href="#">cronometro</a>
+				<a href="#">pagina web</a>
+				<a href="#">clima</a>
+				<a href="#">juego</a>
+				<a href="#">animacion</a>
+				<a href="#">quizz</a>
+
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="bitcoin"
+				 
+			>
+			<a href="bitcoin.html" class="bit">1. un cotizador de bitcoin a tiempo real.</a>
+				<div class="item-contenido">
+					<img src="img/bitcoin.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="calculadora"
+			>
+			<a href="calc.html" class="bit">2. calculadora totalmente funcional.</a>
+				<div class="item-contenido">
+					<img src="img/calculadora.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="cifrado de cesar"
+				
+			>
+			<a href="cifrado.html" class="bit">3. cifrador de cesar funcional.</a>
+				<div class="item-contenido">
+					<img src="img/cifrado de cesar.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="clima"
+			>
+			<a href="clima.html" class="bit">4. app del clima con API.</a>
+				<div class="item-contenido">
+					<img src="img/clima.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="cronometro"
+				 
+			>
+			<a href="crono.html" class="bit">5. cronometro funcional.</a>
+				<div class="item-contenido">
+					<img src="img/cronometro.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="pagina web"
+				
+			>
+			<a href="https://solotusofia.000webhostapp.com/" class="bit">6. pagina web con dedicatoria.</a>
+				<div class="item-contenido">
+					<img src="img/pagina web.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="quizz"
+				 
+			>
+			<a href="quiz.html" class="bit">7. examen de pasado progressive</a>
+				<div class="item-contenido">
+					<img src="img/quizz.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="animacion"
+				
+			>
+			<a href="animacion.html" class="bit">8. anmimacion hecha unicamente con CSS</a>
+				<div class="item-contenido">
+					<img src="img/animación.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="juego"
+				
+			>
+			<a href="memory.html" class="bit">9. juego de memoria</a>
+				<div class="item-contenido">
+					<img src="img/memoria.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				
+
+				<div class="contenedor-icono">
+					<a href="https://www.facebook.com/javith.tapia?_rdc=1&_rdr" target="_blank" class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				
+				
+			</div>
+			<div class="creado-por">
+				<p>Sitio diseñado por <a href="#">Javith Tapia</a> - <a href="https://javithprogramacion.github.io/portafolio.html" id="portafolio">aquí puedes probar mis proyectos</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
